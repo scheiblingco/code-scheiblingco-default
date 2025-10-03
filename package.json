@@ -1,0 +1,33 @@
+{
+  "name": "scheiblingco-default",
+  "displayName": "Scheiblingco Default",
+  "description": "Just a default extension pack",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scheiblingco/code-scheiblingco-default.git"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "publisher": "scheiblingco",
+  "categories": [
+    "Extension Packs"
+  ],
+  "author": {
+      "name": "Scheibling Consulting",
+      "email": "it@scheibling.se"
+  },
+  "extensionPack": [ 
+    "github.copilot", 
+    "GitHub.copilot-chat",
+    "scheiblingco.code-cmd-repeat",
+    "redhat.vscode-yaml",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "humao.rest-client",
+    "adamhartford.vscode-base64",
+    "Gruntfuggly.todo-tree",
+    "bierner.markdown-preview-github-styles"
+  ]
+}
