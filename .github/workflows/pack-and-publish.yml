@@ -14,13 +14,15 @@ jobs:
         with:
           node-version: 20
 
-      # - run: npm ci
-
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v2
         with:
           pat: ${{ secrets.VSM_PAT }}
           registryUrl: https://marketplace.visualstudio.com
+
+      - name: Remove Copilot Chat extension
+        run: |
+          sed -i 's/"GitHub.copilot-chat",//g' package.json
 
       - name: Publish to Open VSX Registry
         uses: HaaLeo/publish-vscode-extension@v2
